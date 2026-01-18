@@ -108,7 +108,7 @@ pdf_file = get_uploaded_file(PDF_FILE_PATH)
 
 
 model = genai.GenerativeModel(
-    model_name="gemini-2.5-flash-lite",
+    model_name="gemini-2.5-flash",
     safety_settings=SAFETY_SETTINGS,
     generation_config=generation_config,
     system_instruction=PROMPT_DATA_MINING
