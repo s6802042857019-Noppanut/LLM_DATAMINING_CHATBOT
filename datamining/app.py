@@ -90,8 +90,8 @@ SAFETY_SETTINGS = {
     HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE
 }
 
-#PDF_FILE_PATH = r"T:\Python Workshop\demo\datamining_chatbot\datamining\Data-Mining-E-Book.pdf"
-PDF_FILE_PATH = r"T:\Python Workshop\demo\datamining_chatbot\datamining\Chapter-4-6-8_Data-Mining.pdf"
+#PDF_FILE_PATH = r"Data-Mining-E-Book.pdf"
+PDF_FILE_PATH = r"Chapter-4-6-8_Data-Mining.pdf"
 
 # cache_resource to avoid re-uploading
 @st.cache_resource
@@ -151,7 +151,7 @@ if prompt := st.chat_input("ถามคำถามเกี่ยวกับ 
         if pdf_file:
              history_for_model.append({
                 "role": "user",
-                "parts": [pdf_file, "ช้ข้อมูลจากไฟล์นี้ตอบคำถาม โดยห้ามระบุเลขหน้า หรือชื่อรูปภาพเด็ดขาด ให้ตอบเสมือนว่าเป็นความรู้ของคุณเอง"]
+                "parts": [pdf_file, "ใช้ข้อมูลจากไฟล์นี้ตอบคำถาม โดยห้ามระบุเลขหน้า หรือชื่อรูปภาพเด็ดขาด ให้ตอบเสมือนว่าเป็นความรู้ของคุณเอง"]
             })
              history_for_model.append({
                 "role": "model",
