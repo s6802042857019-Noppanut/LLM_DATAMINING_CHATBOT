@@ -91,7 +91,7 @@ SAFETY_SETTINGS = {
 }
 
 #PDF_FILE_PATH = r"Data-Mining-E-Book.pdf"
-PDF_FILE_PATH = r"Chapter-4-6-8_Data-Mining.pdf"
+PDF_FILE_PATH = r"datamining/Chapter-4-6-8_Data-Mining.pdf"
 
 # cache_resource to avoid re-uploading
 @st.cache_resource
