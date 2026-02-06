@@ -76,7 +76,7 @@ genai.configure(api_key=GOOGLE_API_KEY)
 
 # Configuration settings
 generation_config = {
-    "temperature": 0.1,
+    "temperature": 0.0,
     "top_p": 0.95,
     "top_k": 40,
     "max_output_tokens": 2048,
@@ -108,7 +108,7 @@ pdf_file = get_uploaded_file(PDF_FILE_PATH)
 
 
 model = genai.GenerativeModel(
-    model_name="gemini-2.5-flash",
+    model_name="gemini-2.5-flash-lite",
     safety_settings=SAFETY_SETTINGS,
     generation_config=generation_config,
     system_instruction=PROMPT_DATA_MINING
